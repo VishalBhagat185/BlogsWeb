@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&display=swap');
+:root {
+    --primary-color: #6366F1;
+    --accent-color: #3f83f8;
+    --text-color: #333333;
+    --link-color: #2563eb;
+    --background-color: #ffffff;
+    --light-gray: #f0f0f0;
+    --gray: #808080;
+    --dark-gray: #555;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    text-align: center;
+    background-color: var(--background-color);
+    padding: 0.4rem;
+}
+.Header{
+       border: 1px solid black;
+}
+.Header_Content{
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding: 1.5rem;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    gap:5px;
+    color:var(--accent-color);
+    text-decoration: none;
+}
+.logo_text{
+    font-size: 2.3rem;
+    transform: color 0.1s;
+}
+.logo_text:hover{
+    color: var(--link-color);
+}
+
+.nav{
+    display: none;
+    gap: 2rem;
+    font-size: 1.2em;
+}
+@media screen and (min-width : 900px) {
+    .nav{
+        display: flex;
+    }
+} 
+.nav_link{
+    color:#718096;
+    font-weight: 700;
+    transform: color 0.1s;
+}
+.nav_link:hover{
+    color: var(--link-color);
+}
+.Contact_Button{
+    border: none;
+    display: none;
+    border-radius: 0.375rem;
+    background-color: var(--primary-color);
+    color:var(--background-color);
+    transform: all  0.1s;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+@media screen and (min-width : 900px) {
+    .Contact_Button{
+        display: block;
+    }
+}
+.Contact_Button:hover{
+    background-color:rgb(115, 177, 216);
+}
+
+.Menu-Button{
+display: none;
+border: none;
+border-radius: 0.386rem;
+background-color: var(--background-color);
+ padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width : 900px) {
+    .Menu-Button{
+         display: block;
+    }
+}
+
+.Menu-Icon{
+    height: 2rem;
+    width: 2rem;
+}
