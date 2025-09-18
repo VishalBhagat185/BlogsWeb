@@ -30,20 +30,21 @@ body{
     max-width: 1280px;
     margin: 0 auto;
     justify-content: space-around;
-    padding: 1.5rem;
+    padding: 1rem;
     align-items: center;
 }
 .logo{
     display: flex;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 1rem;
     font-weight: bold;
     gap:5px;
     color:var(--accent-color);
     text-decoration: none;
 }
 .logo_text{
-    font-size: 2.3rem;
+    font-size: 1.8rem;
+    color: #3574e0;
     transform: color 0.1s;
 }
 .logo_text:hover{
@@ -53,7 +54,7 @@ body{
 .nav{
     display: none;
     gap: 2rem;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 @media screen and (min-width : 900px) {
     .nav{
